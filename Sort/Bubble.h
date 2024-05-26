@@ -6,8 +6,7 @@ public:
 
 	static void sortList(int A[], int N)
 	{
-		int i = 1, j;
-		long int c = 0, p = 0;
+		int i = 1, j; long long int c = 0, p = 0;
 		while (i < N)
 		{
 			c++;
@@ -24,14 +23,13 @@ public:
 					A[j] = item;
 				}
 				j--;
-				for (int k = 0; k < N; k++)
-				{
-					cout << A[k] << " ";
-				}
-				i++;
-				cout << endl;
-
 			}
+			i++;
+			for (int k = 0; k < N; k++)
+			{
+				cout << A[k] << " ";
+			}
+			cout << endl;
 		}
 	}
 };
